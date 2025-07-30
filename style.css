@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin:0;
+    border:0;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img{
+    height:70px;
+    width: 70px;
+    margin-left: 30px ;
+    border: 5px solid white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img:hover{
+    height:80px;
+    width: 80px;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid black;
+    box-shadow: 0 0 10px 5px white;
+}
+
+
+#nav-title{
+    font-family: 'Franklin Gothic Medium';
+    font-size: 32px;
+    color: white;
+    margin-left: 15px;
+}
+
+.game{
+    display: flex;
+    flex-direction: column;
+    min-height: 700px;
+    min-width: 300px;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    text-align: center;
+}
+
+.score{
+    display: flex;
+    width: 300px;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 200px;
+}
+
+.p-count,.c-count{
+    text-align: center;
+    font-size: 26px;
+    margin-top: 20px;
+}
+
+.options{
+    display: flex;
+    width: 300px;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.rock, .paper, .scissors{
+    min-height: 80px;
+    min-width: 150px;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 18px;
+    background: rgb(255, 255, 255);
+    border: 3px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.rock:hover, .paper:hover, .scissors:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px white;
+}
+
+.move{
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+.movesleft{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.reload {
+    display: none;
+    margin-top: 2rem;
+    padding: 1rem;
+    background: rgb(255, 255, 255);
+    border: 3px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.result{
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
